@@ -5,3 +5,15 @@ h3, p {
 img {
     padding-right: 1%;
 }
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
+
+.carousel-control.left::before, .carousel-control.right::before {
+    content: none !important;
+}
+
+.carousel-inner .item img {
+    filter: brightness(70%);
+}
