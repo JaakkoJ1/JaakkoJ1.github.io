@@ -8,25 +8,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="jumbotron text-center">
-        <h1>Jaakko Jumpponen</h1>
-    </div>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="projektit.html">Projektit</a></li>
-                <li><a href="osaaminen.html">Osaaminen</a></li>
-                <li class="active"><a href="kiinnostukset.html">Kiinnostukset</a></li>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" class="dm-sans">ETUSIVU</a></li>
+                <li><a href="projektit.html" class="dm-sans">PROJEKTIT</a></li>
+                <li><a href="osaaminen.html" class="dm-sans">OSAAMINEN</a></li>
+                <li class="active"><a href="kiinnostukset.html" class="dm-sans">KIINNOSTUKSET</a></li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <div class="a">
-            <h3>Kiinnostukset</h3>
+            <h3 class="dm-sans">KIINNOSTUKSET</h3>
+            <p class="bitter">Minun kiinnostuksen kohteisiin kuuluu:</p>
+            <ul class="bitter">
+                <li>Koodaaminen.</li>
+                <li>Salitreenaaminen.</li>
+                <li>Musiikin tuottaminen.</li>
+                <li>Musiikin kuuntelu.</li>
+                <li>Uusien asioiden oppiminen.</li>
+                <li>Uusien ideoiden keksiminen.</li>
+            </ul>
         </div>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <footer class="py-5">
+            <p class="bitter">© 2025 Jaakko Jumpponen</p>
+        </footer>
     </div>
 </body>
 </html>
