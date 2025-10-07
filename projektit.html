@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="jumbotron text-center">
-        <h1>Jaakko Jumpponen</h1>
-    </div>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <ul class="nav navbar-nav">
-                <li><a href="index.html">Etusivu</a></li>
-                <li class="active"><a href="projektit.html">Projektit</a></li>
-                <li><a href="osaaminen.html">Osaaminen</a></li>
-                <li><a href="kiinnostukset.html">Kiinnostukset</a></li>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" class="dm-sans">ETUSIVU</a></li>
+                <li class="active"><a href="projektit.html" class="dm-sans">PROJEKTIT</a></li>
+                <li><a href="osaaminen.html" class="dm-sans">OSAAMINEN</a></li>
+                <li><a href="kiinnostukset.html" class="dm-sans">KIINNOSTUKSET</a></li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <div class="a">
-            <h3>Projektit</h3>
-            <p>Alla olevista kuvista näkyy erilaisia projekteja mitä olen tehnyt.</p>
+            <h3 class="dm-sans">PROJEKTIT</h3>
+            <p class="bitter">Alla olevista kuvista näkyy erilaisia projekteja mitä olen tehnyt.</p>
         </div>
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -41,36 +41,36 @@
                 <div class="item active">
                     <img src="images/autotietokanta.png">
                     <div class="carousel-caption">
-                        <h3>Autot tietokanta</h3>
-                        <p>Tehty käyttämällä HTML, PHP, SQL kieltä ja mukana REST API/JSON.</p>
+                        <h3 class="bitter">TIETOKANTA AUTOILLE</h3>
+                        <p class="bitter">Tehty käyttämällä HTML-, PHP-, SQL-kieltä ja mukana REST API/JSON.</p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/csharpkoe.png">
                     <div class="carousel-caption">
-                        <h3>C# Pizzamenu</h3>
-                        <p>Pizzamenu tehty käyttämällä C#.</p>
+                        <h3 class="bitter">C# PIZZAMENU</h3>
+                        <p class="bitter">Pizzamenu tehty käyttämällä C#.</p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/elokuvatietokanta.png">
                     <div class="carousel-caption">
-                        <h3>Elokuvan vuokraus</h3>
-                        <p>HTML/PHP sivut tehty elokuvan vuokraukselle ja tietokanta tehty käyttämällä SQL.</p>
+                        <h3 class="bitter">ELOKUVAN VUOKRAUS</h3>
+                        <p class="bitter">HTML/PHP-sivut tehty elokuvan vuokraukselle ja tietokanta tehty käyttämällä SQL.</p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/csharpkaksilomaketta.png">
                     <div class="carousel-caption">
-                        <h3>C# Kaksi lomaketta</h3>
-                        <p>Kirjautumis- ja kalorilaskenta sivut tehty käyttämällä C#.</p>
+                        <h3 class="bitter">C# KAKSI LOMAKETTA</h3>
+                        <p class="bitter">Kirjautumis- ja kalorilaskentasivut tehty käyttämällä C#.</p>
                     </div>
                 </div>
                 <div class="item">
                     <img src="images/kaavio.png">
                     <div class="carousel-caption">
-                        <h3>Kaavion suunnittelua SQL tietokannalle</h3>
-                        <p>Tehty käyttämällä diagrams.net.</p>
+                        <h3 class="bitter">KAAVION SUUNNITTELUA SQL-TIETOKANNALLE</h3>
+                        <p class="bitter">Tehty käyttämällä diagrams.net.</p>
                     </div>
                 </div>
             </div>
@@ -83,6 +83,12 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <footer class="py-5">
+            <p class="bitter">© 2025 Jaakko Jumpponen</p>
+        </footer>
     </div>
 </body>
 </html>
