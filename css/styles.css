@@ -22,3 +22,43 @@
 .b {
     text-align: center;
 }
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.self-img {
+    width: 50%;
+}
+
+.self-banner {
+    position: relative;
+    background-image: url("/images/1_blur.png");
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+li::marker {
+  color: rgb(210, 160, 70);
+}
