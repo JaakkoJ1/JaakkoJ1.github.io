@@ -57,6 +57,8 @@
     font-family: "Young Serif", serif;
     font-weight: 400;
     font-style: normal;
+    color: white;
+    opacity: 75%;
 }
 
 li::marker {
