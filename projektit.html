@@ -4,91 +4,247 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaakko Jumpponen - Projektit</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: 
+            linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+            url("images/bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        background-color: white;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .nav-active {
+        background-color: rgba(0, 0, 0, 0.125);
+    }
+
+    .nav-hover:hover {
+        transition-duration: 0.4s;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+</style>
 </head>
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html" class="dm-sans">ETUSIVU</a></li>
-                <li class="active"><a href="projektit.html" class="dm-sans">PROJEKTIT</a></li>
-                <li><a href="osaaminen.html" class="dm-sans">OSAAMINEN</a></li>
-                <li><a href="kiinnostukset.html" class="dm-sans">KIINNOSTUKSET</a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="index.html"><b style="color: black;">ETUSIVU</b></a></li>
+                <li class="zalando-sans-expanded nav-active"><a href="projektit.html"><b style="color: black;">PROJEKTIT</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="osaaminen.html"><b style="color: black;">OSAAMINEN</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="kiinnostukset.html"><b style="color: black;">KIINNOSTUKSET</b></a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="a">
-            <h3 class="dm-sans">PROJEKTIT</h3>
-            <p class="bitter">Alla olevista kuvista näkyy erilaisia projekteja mitä olen tehnyt.</p>
+    <div id="toast">
+        Sähköposti kopioitu leikepöydälle!
+        <div class="toast-bar"></div>
+    </div>
+    <div class="glass-card">
+        <h1 class="climate-crisis site-text">Projektit</h1>
+        <br>
+        <p class="zalando-sans">Alla olevista kuvista näkyy erilaisia projekteja mitä olen tehnyt.<br>Paina kuvaa vaihtaaksesi seuraavaan.</p>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>HTML / PHP PROJEKTIT<a style="margin-left: 10px;" href="https://github.com/JaakkoJ1/Taitaja-2024-Projektityo/tree/main/tiedostot_final_v2"target="_blank">(GITHUB LINKKI)</a></b></p>
+            </summary>
+            <p class="zalando-sans">Verkkokauppa.</p>
+            <div class="project-img-container">
+                <img class="project-img" id="php-img1" src="" alt="HTML / PHP kuvat">
+                <p class="img-counter zalando-sans" id="php-img1-counter">1/3</p>
+            </div>
+        <br>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>C# PROJEKTIT</b></p>
+            </summary>
+            <p class="zalando-sans">Mäkihypyn tyylipisteet ja pizzamenu.</p>
+            <div class="project-img-container">
+                <img class="project-img" id="php-img2" src="" alt="C# kuvat">
+                <p class="img-counter zalando-sans" id="php-img2-counter">1/3</p>
+            </div>
+        <br>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>TIETOKANNAT / ER-KAAVIO</b></p>
+            </summary>
+            <p class="zalando-sans">Elokuvan vuokraus, autotietokanta ja tietokannan suunnittelua ER-kaaviolla.</p>
+            <div class="project-img-container">
+                <img class="project-img" id="php-img3" src="" alt="Tietokannat / ER-kaavio kuvat">
+                <p class="img-counter zalando-sans" id="php-img3-counter">1/3</p>
+            </div>
+        </details>
+    </div>
+    <br>
+    <br>
+    <footer class="py-5">
+        <h1 class="climate-crisis" style="color: black;">Ota yhteyttä</h1>
+        <br>
+        <a href="https://github.com/JaakkoJ1"target="_blank"><img src="images/github.png" class="icon-link" alt="GitHub icon"></a>
+        <a style="margin-left: 15px;" href="https://www.linkedin.com/in/jaakko-jumpponen-8280232ab"target="_blank"><img src="images/linkedin.png" class="icon-link" alt="LinkedIn icon"></a>
+        <br>
+        <br>
+        <div class="email-container">
+            <img src="images/email.png" class="icon-link email-icon" alt="Sähköposti icon">
+            <div class="zalando-sans email-slide" style="color: black;">
+                jumpponenj@gmail.com
+                <button class="copy-btn">Kopioi</button>
+            </div>
         </div>
         <br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="images/autotietokanta.png">
-                    <div class="carousel-caption">
-                        <h3 class="bitter">TIETOKANTA AUTOILLE</h3>
-                        <p class="bitter">Tehty käyttämällä HTML-, PHP-, SQL-kieltä ja mukana REST API/JSON.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/csharpkoe.png">
-                    <div class="carousel-caption">
-                        <h3 class="bitter">C# PIZZAMENU</h3>
-                        <p class="bitter">Pizzamenu tehty käyttämällä C#.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/elokuvatietokanta.png">
-                    <div class="carousel-caption">
-                        <h3 class="bitter">ELOKUVAN VUOKRAUS</h3>
-                        <p class="bitter">HTML/PHP-sivut tehty elokuvan vuokraukselle ja tietokanta tehty käyttämällä SQL.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/csharpkaksilomaketta.png">
-                    <div class="carousel-caption">
-                        <h3 class="bitter">C# KAKSI LOMAKETTA</h3>
-                        <p class="bitter">Kirjautumis- ja kalorilaskentasivut tehty käyttämällä C#.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/kaavio.png">
-                    <div class="carousel-caption">
-                        <h3 class="bitter">KAAVION SUUNNITTELUA SQL-TIETOKANNALLE</h3>
-                        <p class="bitter">Tehty käyttämällä diagrams.net.</p>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-    <hr>
-    <div class="container text-center">
-        <footer class="py-5">
-            <p class="bitter">© 2025 Jaakko Jumpponen</p>
-        </footer>
-    </div>
+        <br>
+        <br>
+        <p class="zalando-sans" style="text-align: center; color: black;">© 2025 Jaakko Jumpponen</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(".email-icon").on("click", function() {
+                $(".email-slide").toggleClass("active");
+            });
+        });
+
+        $(".copy-btn").on("click", function(event) {
+            event.stopPropagation();
+
+            const btn = $(this);
+
+            if (btn.prop("disabled")) {
+                return;
+            }
+
+            btn.prop("disabled", true);
+
+            if (!$(".email-slide").hasClass("active")) {
+                btn.prop("disabled", false);
+                return;
+            }
+
+            const email = "jumpponenj@gmail.com";
+            navigator.clipboard.writeText(email);
+
+            btn.text("Kopioitu!");
+            btn.addClass("copied");
+
+            setTimeout(() => {
+                btn.text("Kopioi");
+                btn.removeClass("copied");
+
+                btn.prop("disabled", false);
+            }, 1750);
+
+
+            const toast = $("#toast");
+            const bar = toast.find(".toast-bar");
+
+            toast.addClass("show");
+
+            bar.stop(true);
+            bar.css({ width: "0%" });
+            bar.animate({ width: "100%" }, 1750, "linear");
+
+            setTimeout(() => {
+                toast.removeClass("show");
+                bar.css({ width: "0%" });
+            }, 1750);
+        });
+
+        $(document).ready(function() {
+            $("details").each(function() {
+                const $details = $(this);
+                const $content = $details.children().not("summary");
+                $content.hide();
+
+                $details.on("toggle", function() {
+                    if ($details.prop("open")) {
+                        $content.stop(true, true).fadeIn(250);
+                    } else {
+                        $content.stop(true, true).fadeOut(200);
+                    }
+                });
+            });
+        });
+
+        const phpImages1 = [
+            "images/html_1.png",
+            "images/html_2.png",
+            "images/html_3.png"
+        ];
+        const img1 = document.getElementById("php-img1");
+        const counter1 = document.getElementById("php-img1-counter");
+        let currentIndex1 = 0;
+        img1.src = phpImages1[currentIndex1];
+        counter1.textContent = `${currentIndex1 + 1}/${phpImages1.length}`;
+
+        img1.addEventListener("click", function () {
+            currentIndex1 = (currentIndex1 + 1) % phpImages1.length;
+            img1.src = phpImages1[currentIndex1];
+            counter1.textContent = `${currentIndex1 + 1}/${phpImages1.length}`;
+        });
+
+        const phpImages2 = [
+            "images/csharp_1.png",
+            "images/csharp_2.png"
+        ];
+        const img2 = document.getElementById("php-img2");
+        const counter2 = document.getElementById("php-img2-counter");
+        let currentIndex2 = 0;
+        img2.src = phpImages2[currentIndex2];
+        counter2.textContent = `${currentIndex2 + 1}/${phpImages2.length}`;
+
+        img2.addEventListener("click", function () {
+            currentIndex2 = (currentIndex2 + 1) % phpImages2.length;
+            img2.src = phpImages2[currentIndex2];
+            counter2.textContent = `${currentIndex2 + 1}/${phpImages2.length}`;
+        });
+
+        const phpImages3 = [
+            "images/tietokanta_1.png",
+            "images/tietokanta_2.png",
+            "images/tietokanta_3.png"
+        ];
+        const img3 = document.getElementById("php-img3");
+        const counter3 = document.getElementById("php-img3-counter");
+        let currentIndex3 = 0;
+        img3.src = phpImages3[currentIndex3];
+        counter3.textContent = `${currentIndex3 + 1}/${phpImages3.length}`;
+
+        img3.addEventListener("click", function () {
+            currentIndex3 = (currentIndex3 + 1) % phpImages3.length;
+            img3.src = phpImages3[currentIndex3];
+            counter3.textContent = `${currentIndex3 + 1}/${phpImages3.length}`;
+        });
+
+        document.querySelectorAll(".project-img").forEach(img => {
+            img.addEventListener("click", () => {
+                img.classList.add("clicked");
+                setTimeout(() => {
+                    img.classList.remove("clicked");
+                }, 300);
+            });
+        });
+    </script>
 </body>
 </html>
