@@ -4,87 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaakko Jumpponen - Osaaminen</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: 
+            linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+            url("images/bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        background-color: white;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .nav-active {
+        background-color: rgba(0, 0, 0, 0.125);
+    }
+
+    .nav-hover:hover {
+        transition-duration: 0.4s;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+</style>
 </head>
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html" class="dm-sans">ETUSIVU</a></li>
-                <li><a href="projektit.html" class="dm-sans">PROJEKTIT</a></li>
-                <li class="active"><a href="osaaminen.html" class="dm-sans">OSAAMINEN</a></li>
-                <li><a href="kiinnostukset.html" class="dm-sans">KIINNOSTUKSET</a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="index.html"><b style="color: black;">ETUSIVU</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="projektit.html"><b style="color: black;">PROJEKTIT</b></a></li>
+                <li class="zalando-sans-expanded nav-active"><a href="osaaminen.html"><b style="color: black;">OSAAMINEN</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="kiinnostukset.html"><b style="color: black;">KIINNOSTUKSET</b></a></li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <div class="a">
-            <h3 class="dm-sans">OSAAMINEN</h3>
-            <p class="bitter">Entistä osaamista olen saanut paljon omista harrastuksista ja koulusta.<br>Tässä on lista ohjelmista, joita osaan käyttää sujuvasti, sekä kielistä ja ohjelmointikielistä, joihin olen tutustunut.</p>
+    <div id="toast">
+        Sähköposti kopioitu leikepöydälle!
+        <div class="toast-bar"></div>
+    </div>
+    <div class="glass-card">
+        <h1 class="climate-crisis site-text">Osaaminen</h1>
+        <br>
+        <p class="zalando-sans">Entistä osaamista olen saanut paljon omista harrastuksista ja koulusta.<br>Tässä on lista ohjelmista, joita osaan käyttää sujuvasti, sekä kielistä ja ohjelmointikielistä, joihin olen tutustunut.</p>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>OHJELMAT</b></p>
+            </summary>
+            <div class="table-responsive">
+                <table class="table">
+                    <tr>
+                        <th class="zalando-sans-expanded"><li style="margin-left: 20px;"><b>OHJELMOINTIYMPÄRISTÖT</b></li></th>
+                    </tr>
+                    <tr>
+                        <td><img class="img-icon" src="images/visualstudiocode.png" alt="Visual Studio Code icon"><img class="img-icon" src="images/visualstudio.png" alt="Visual Studio icon"></td>
+                    </tr>
+                    <tr>
+                        <th class="zalando-sans-expanded"><li style="margin-left: 20px;"><b>OFFICE 365 -OHJELMAT</b></li></th>
+                    </tr>
+                    <tr>
+                        <td><img class="img-icon" src="images/microsoftword.png" alt="Microsoft Word icon"><img class="img-icon" src="images/microsoftpowerpoint.png" alt="Microsoft PowerPoint icon"><img class="img-icon" src="images/microsoftexcel.png" alt="Microsoft Excel icon"></td>
+                    </tr>
+                    <tr>
+                        <th class="zalando-sans-expanded"><li style="margin-left: 20px;"><b>ADOBEN OHJELMAT</b></li></th>
+                    </tr>
+                    <tr>
+                        <td><img class="img-icon" src="images/adobephotoshop.png" alt="Adobe Photoshop icon"><img class="img-icon" src="images/adobepremierepro.png" alt="Adobe Premiere Pro icon"></td>
+                    </tr>
+                    <tr>
+                        <th class="zalando-sans-expanded"><li style="margin-left: 20px;"><b>MUSIIKINTEKO-OHJELMAT</b></li></th>
+                    </tr>
+                    <tr>
+                        <td><img class="img-icon" src="images/flstudio.png" alt="FL Studio Icon"></td>
+                    </tr>
+                    <tr>
+                        <th class="zalando-sans-expanded"><li style="margin-left: 20px;"><b>VIDEOEDITOINTI-OHJELMAT</b></li></th>
+                    </tr>
+                    <tr>
+                        <td><img class="img-icon" src="images/davinciresolve.png" alt="Davinci Resolve Icon"></td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>OHJELMOINTIKIELET</b></p>
+            </summary>
+            <ul class="zalando-sans">
+                <li>C#</li>
+                <li>HTML/CSS</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+            </ul>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>KIELET</b></p>
+            </summary>
+            <ul class="zalando-sans">
+                <li>suomi (Äidinkieli, erinomainen)</li>
+                <li>englanti (Erinomainen)</li>
+                <li>ruotsi (Tyydyttävä)</li>
+            </ul>
+        </details>
+    </div>
+    <br>
+    <br>
+    <footer class="py-5">
+        <h1 class="climate-crisis" style="color: black;">Ota yhteyttä</h1>
+        <br>
+        <a href="https://github.com/JaakkoJ1"target="_blank"><img src="images/github.png" class="icon-link" alt="GitHub icon"></a>
+        <a style="margin-left: 15px;" href="https://www.linkedin.com/in/jaakko-jumpponen-8280232ab"target="_blank"><img src="images/linkedin.png" class="icon-link" alt="LinkedIn icon"></a>
+        <br>
+        <br>
+        <div class="email-container">
+            <img src="images/email.png" class="icon-link email-icon" alt="Sähköposti icon">
+            <div class="zalando-sans email-slide" style="color: black;">
+                jumpponenj@gmail.com
+                <button class="copy-btn">Kopioi</button>
+            </div>
         </div>
         <br>
-        <table class="table table-hover">
-            <tr class="dm-sans">
-                <th colspan="4">OHJELMAT</th>
-            </tr>
-            <tr class="dm-sans">
-                <th colspan="4">OHJELMOINTIYMPÄRISTÖT</th>
-            </tr>
-            <tr class="bitter">
-                <td><img src="images/visualstudio.png" class="icon-img" alt="Visual Studio logo" width="50">Visual Studio</td>
-                <td colspan="3"><img src="images/visualstudiocode.png" class="icon-img" alt="Visual Studio Code logo" width="50">Visual Studio Code</td>
-            </tr>
-            <tr class="dm-sans">
-                <th colspan="4">OFFICE 365 -OHJELMAT</th>
-            </tr>
-            <tr class="bitter">
-                <td><img src="images/microsoftword.png" class="icon-img" alt="Microsoft Word logo" width="50">Microsoft Word</td>
-                <td><img src="images/microsoftexcel.png" class="icon-img" alt="Microsoft Excel logo" width="50">Microsoft Excel</td>
-                <td colspan="2"><img src="images/microsoftpowerpoint.png" class="icon-img" alt="Microsoft PowerPoint logo" width="50">Microsoft PowerPoint</td>
-            </tr>
-            <tr class="dm-sans">
-                <th colspan="4">ADOBEN OHJELMAT</th>
-            </tr>
-            <tr class="bitter">
-                <td><img src="images/adobephotoshop.png" class="icon-img" alt="Adobe Photoshop logo" width="50">Adobe Photoshop</td>
-                <td colspan="3"><img src="images/adobepremierepro.png" class="icon-img" alt="Adobe Premiere Pro logo" width="50">Adobe Premiere Pro</td>
-            </tr>
-            <tr class="dm-sans">
-                <th colspan="4">MUSIIKINTEKO-OHJELMAT</th>
-            </tr>
-            <tr class="bitter">
-                <td colspan="4"><img src="images/flstudio.png" class="icon-img" alt="FL Studio logo" width="50">FL Studio</td>
-            </tr>
-            <tr class="dm-sans">
-                <th colspan="4">OHJELMOINTIKIELET</th>
-            </tr>
-            <tr class="bitter">
-                <td>C#</td>
-                <td>HTML/CSS</td>
-                <td>PHP</td>
-                <td>SQL</td>
-            </tr>
-            <tr class="dm-sans">
-                <th colspan="4">KIELET</th>
-            </tr>
-            <tr class="bitter">
-                <td>suomi (Äidinkieli, erinomainen)</td>
-                <td>englanti (Erinomainen)</td>
-                <td colspan="2">ruotsi (Tyydyttävä)</td>
-            </tr>
-        </table>
-    </div>
-    <hr>
-    <div class="container text-center">
-        <footer class="py-5">
-            <p class="bitter">© 2025 Jaakko Jumpponen</p>
-        </footer>
-    </div>
+        <br>
+        <br>
+        <p class="zalando-sans" style="text-align: center; color: black;">© 2025 Jaakko Jumpponen</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(".email-icon").on("click", function() {
+                $(".email-slide").toggleClass("active");
+            });
+        });
+
+        $(".copy-btn").on("click", function(event) {
+            event.stopPropagation();
+
+            const btn = $(this);
+
+            if (btn.prop("disabled")) {
+                return;
+            }
+
+            btn.prop("disabled", true);
+
+            if (!$(".email-slide").hasClass("active")) {
+                btn.prop("disabled", false);
+                return;
+            }
+
+            const email = "jumpponenj@gmail.com";
+            navigator.clipboard.writeText(email);
+
+            btn.text("Kopioitu!");
+            btn.addClass("copied");
+
+            setTimeout(() => {
+                btn.text("Kopioi");
+                btn.removeClass("copied");
+
+                btn.prop("disabled", false);
+            }, 1750);
+
+
+            const toast = $("#toast");
+            const bar = toast.find(".toast-bar");
+
+            toast.addClass("show");
+
+            bar.stop(true);
+            bar.css({ width: "0%" });
+            bar.animate({ width: "100%" }, 1750, "linear");
+
+            setTimeout(() => {
+                toast.removeClass("show");
+                bar.css({ width: "0%" });
+            }, 1750);
+        });
+
+        $(document).ready(function() {
+            $("details").each(function() {
+                const $details = $(this);
+                const $content = $details.children().not("summary");
+                $content.hide();
+
+                $details.on("toggle", function() {
+                    if ($details.prop("open")) {
+                        $content.stop(true, true).fadeIn(250);
+                    } else {
+                        $content.stop(true, true).fadeOut(200);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
