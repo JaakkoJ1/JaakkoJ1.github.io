@@ -4,78 +4,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaakko Jumpponen - Etusivu</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+<style>
+    body {
+        background: 
+            linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+            url("images/bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        background-color: white;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .nav-active {
+        background-color: rgba(0, 0, 0, 0.125);
+    }
+
+    .nav-hover:hover {
+        transition-duration: 0.4s;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+</style>
 </head>
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html" class="dm-sans">ETUSIVU</a></li>
-                <li><a href="projektit.html" class="dm-sans">PROJEKTIT</a></li>
-                <li><a href="osaaminen.html" class="dm-sans">OSAAMINEN</a></li>
-                <li><a href="kiinnostukset.html" class="dm-sans">KIINNOSTUKSET</a></li>
+                <li class="zalando-sans-expanded nav-active"><a href="index.html"><b style="color: black;">ETUSIVU</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="projektit.html"><b style="color: black;">PROJEKTIT</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="osaaminen.html"><b style="color: black;">OSAAMINEN</b></a></li>
+                <li class="zalando-sans-expanded nav-hover"><a href="kiinnostukset.html"><b style="color: black;">KIINNOSTUKSET</b></a></li>
             </ul>
         </div>
     </nav>
-    <div class="container text-center self-banner">
-        <img src="images/1.png" class="self-img">
-        <h1 class="centered young-serif-regular">JAAKKO JUMPPONEN</h1>
+    <div id="toast">
+        Sähköposti kopioitu leikepöydälle!
+        <div class="toast-bar"></div>
     </div>
-    <hr>
-    <div class="container">
-        <div class="a">
-            <h3 class="dm-sans">TIETOA MINUSTA</h3>
-            <p class="bitter">Hei, olen 17-vuotias poika Kuopiosta. Opiskelen tällä hetkellä Savon ammattiopistossa ohjelmistokehittäjäksi.<br>Hallitsen monet tietokoneohjelmat ja kiinnostusta löytyy uuden luomiseen.</p>
-            <hr>
-            <p class="dm-sans"><b>HARRASTUKSET:</b></p>
-            <ul class="bitter">
+    <div class="glass-card">
+        <h1 class="climate-crisis site-text">Tietoa minusta</h1>
+        <br>
+        <p class="zalando-sans">Hei, olen 17-vuotias poika Kuopiosta. Opiskelen tällä hetkellä Savon ammattiopistossa ohjelmistokehittäjäksi.<br>Hallitsen monet tietokoneohjelmat ja kiinnostusta löytyy uuden luomiseen.</p>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>HARRASTUKSET</b></p>
+            </summary>
+            <ul class="zalando-sans">
                 <li>Koodaaminen.</li>
                 <li>Salitreenaaminen.</li>
                 <li>Musiikin kuuntelu ja tuottaminen.</li>
+                <li>Videoeditointi.</li>
             </ul>
-            <hr>
-            <p class="dm-sans"><b>VAHVUUDET:</b></p>
-            <p class="bitter">Työssä olen rauhallinen, huolellinen ja teen työt aina loppuun asti. </p>
-            <ul class="bitter">
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>VAHVUUDET</b></p>
+            </summary>
+            <p class="zalando-sans">Työssä kuuntelen ohjeet tarkasti, olen rauhallinen, huolellinen ja teen työt aina loppuun asti.</p>
+            <ul class="zalando-sans">
                 <li>Uusien luovien ideoiden keksiminen.</li>
                 <li>Sitkeys ja kärsivällisyys työtehtävissä.</li>
                 <li>Joskus voin tehdä töitä liikaa tai kunnes se on tarpeeksi hyvä, joka voi olla toisaalta positiivinen asia.</li>
             </ul>
-            <hr>
-            <p class="dm-sans"><b>KOULUTUKSET:</b></p>
-            <ul class="bitter">
-                <li>Peruskoulu - (2015-2024)</li>
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>KOULUTUKSET</b></p>
+            </summary>
+            <ul class="zalando-sans">
+                <li>Peruskoulu:</li>
+                <ul>
+                    <li>Länsi-Puijon koulu (2015 - 2021)</li>
+                    <li>Hatsalan klassillinen koulu (2021 - 2024)</li>
+                </ul>
                 <li>Savon ammattiopisto: Tieto- ja viestintätekniikan perustutkinto - (Meneillään, valmistun 2027 keväällä ohjelmistokehittäjäksi)</li>
             </ul>
-            <hr>
-            <p class="dm-sans"><b>TYÖKOKEMUKSET:</b></p>
-            <ul class="bitter">
+        </details>
+        <br>
+        <details>
+            <summary>
+                <p class="zalando-sans-expanded"><b>TYÖKOKEMUKSET</b></p>
+            </summary>
+            <ul class="zalando-sans">
                 <li>TET-harjoittelu: Työterveyslaitos - (lokak. 2023 - marrask. 2023)</li>
                 <ul>
                     <li>Arkistoin papereita kansioihin.</li>
                     <li>Siivosin huoneita.</li>
                 </ul>
             </ul>
-            <p class="bitter">Olen myös työskennellyt monien omien projektien parissa.</p>
-            <hr>
-        </div>
-        <div class="b">
-            <h3 class="dm-sans">OTA YHTEYTTÄ</h3>
-            <p class="bitter">Sähköposti: jumpponenj@gmail.com</p>
-            <p class="bitter">LinkedIn: <a href="https://www.linkedin.com/in/jaakko-jumpponen-8280232ab/"target="_blank">Jaakko Jumpponen</a></p>
-        </div>
+            <p class="zalando-sans">Olen myös työskennellyt monien omien projektien parissa.</p>
+            <br>
+            <a href="projektit.html" class="zalando-sans button">Selaa projektejani</a>
+        </details>
     </div>
-    <hr>
-    <div class="container text-center">
-        <footer class="py-5">
-            <p class="bitter">© 2025 Jaakko Jumpponen</p>
-        </footer>
-    </div>
+    <br>
+    <br>
+    <footer class="py-5">
+        <h1 class="climate-crisis" style="color: black;">Ota yhteyttä</h1>
+        <br>
+        <a href="https://github.com/JaakkoJ1"target="_blank"><img src="images/github.png" class="icon-link" alt="GitHub icon"></a>
+        <a style="margin-left: 15px;" href="https://www.linkedin.com/in/jaakko-jumpponen-8280232ab"target="_blank"><img src="images/linkedin.png" class="icon-link" alt="LinkedIn icon"></a>
+        <br>
+        <br>
+        <div class="email-container">
+            <img src="images/email.png" class="icon-link email-icon" alt="Sähköposti icon">
+            <div class="zalando-sans email-slide" style="color: black;">
+                jumpponenj@gmail.com
+                <button class="copy-btn">Kopioi</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <p class="zalando-sans" style="text-align: center; color: black;">© 2025 Jaakko Jumpponen</p>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(".email-icon").on("click", function() {
+                $(".email-slide").toggleClass("active");
+            });
+        });
+
+        $(".copy-btn").on("click", function(event) {
+            event.stopPropagation();
+
+            const btn = $(this);
+
+            if (btn.prop("disabled")) {
+                return;
+            }
+
+            btn.prop("disabled", true);
+
+            if (!$(".email-slide").hasClass("active")) {
+                btn.prop("disabled", false);
+                return;
+            }
+
+            const email = "jumpponenj@gmail.com";
+            navigator.clipboard.writeText(email);
+
+            btn.text("Kopioitu!");
+            btn.addClass("copied");
+
+            setTimeout(() => {
+                btn.text("Kopioi");
+                btn.removeClass("copied");
+
+                btn.prop("disabled", false);
+            }, 1750);
+
+
+            const toast = $("#toast");
+            const bar = toast.find(".toast-bar");
+
+            toast.addClass("show");
+
+            bar.stop(true);
+            bar.css({ width: "0%" });
+            bar.animate({ width: "100%" }, 1750, "linear");
+
+            setTimeout(() => {
+                toast.removeClass("show");
+                bar.css({ width: "0%" });
+            }, 1750);
+        });
+
+        $(document).ready(function() {
+            $("details").each(function() {
+                const $details = $(this);
+                const $content = $details.children().not("summary");
+                $content.hide();
+
+                $details.on("toggle", function() {
+                    if ($details.prop("open")) {
+                        $content.stop(true, true).fadeIn(250);
+                    } else {
+                        $content.stop(true, true).fadeOut(200);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
